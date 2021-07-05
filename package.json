@@ -1,0 +1,30 @@
+{
+  "name": "qiankun-multiple-tabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && npm i",
+    "install:micro-app1": "cd micro-app1 && npm i",
+    "install:micro-app2": "cd micro-app2 && npm i",
+    "start": "npm-run-all --parallel start:*",
+    "start:main": "cd main && npm start",
+    "start:micro-app1": "cd micro-app1 && npm start",
+    "start:micro-app2": "cd micro-app2 && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luckyfrogg/qiankun-multiple-tabs.git"
+  },
+  "keywords": [
+    "qiankun",
+    "qiankun-demo",
+    "qiankun-tabs"
+  ],
+  "author": "luckyfroggy",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
